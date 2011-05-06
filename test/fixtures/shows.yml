@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  festival_id: 1
+  venue_id: 1
+  name: MyString
+  start_date: 2011-04-27 20:37:58
+  end_date: 2011-04-27 20:37:58
+  score: 1.5
+
+two:
+  festival_id: 1
+  venue_id: 1
+  name: MyString
+  start_date: 2011-04-27 20:37:58
+  end_date: 2011-04-27 20:37:58
+  score: 1.5

@@ -1,0 +1,30 @@
+<h1>Listing events</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+	<th>Venue</th>
+	<th>Festival</th>
+    <th>Starts</th>
+    <th>Ends</th>
+  </tr>
+
+<% @events.each do |event| %>
+  <tr>
+    <td><%=h event.name %></td>
+    <td><%=h event.venue_id %></td>
+    <td><%=h event.festival_id %></td>
+    <td><%=h event.starts %></td>
+    <td><%=h event.ends %></td>
+    <td><%= link_to 'Show', event %></td>
+    <td><%= link_to 'Edit', edit_event_path(event) %></td>
+    <td><%= link_to 'Destroy', event, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New event', new_event_path %>
+<br/><br/>
+<%=link_to "Home", {:controller=>:index, :action=>:index}%>

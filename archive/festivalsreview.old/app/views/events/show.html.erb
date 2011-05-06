@@ -1,0 +1,25 @@
+<p>
+  <b>Name:</b>
+  <%=h @event.name %>
+</p>
+<p>
+  <b>Startdate:</b>
+  <%=h @event.venue_id %>
+</p>
+<p>
+  <b>Startdate:</b>
+  <%=h @event.festival_id %>
+</p>
+<p>
+  <b>Startdate:</b>
+  <%=h @event.starts %>
+</p>
+
+<p>
+  <b>Enddate:</b>
+  <%=h @event.ends %>
+</p>
+
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>

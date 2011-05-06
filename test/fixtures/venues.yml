@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  festival_id: 1
+  address: MyString
+  score: 1.5
+
+two:
+  name: MyString
+  festival_id: 1
+  address: MyString
+  score: 1.5

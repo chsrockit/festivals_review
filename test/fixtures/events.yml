@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  festival_id: 1
+  show_id: 1
+  venue_id: 1
+  score: 1.5
+
+two:
+  name: MyString
+  festival_id: 1
+  show_id: 1
+  venue_id: 1
+  score: 1.5

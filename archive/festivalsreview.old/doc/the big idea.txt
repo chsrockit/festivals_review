@@ -1,0 +1,19 @@
+Festivalsreview is a website where people can find out more information about the events going on around them.
+
+It is launching at the Edinburgh Festival, and will provide aggregated information and statistics about festivals, venues, events and the writers covering and reviewing events.
+
+Every item [festival, venues, events, writers] will have some kind of a 'score' that is calculated by an algorithm based on aggregated or inputted data about them. 
+
+For example:
+
+Festivals could have a score based on [positive event reviews, attendance, number of events, number of venues, diversity of show types, length, positive venue scores]
+
+Venues could have a score based on [number of shows, attendance, capacity, event review scores, event scores, location, physical condition, festival score, presence of facilities, social media presence]
+
+Events could have a score based on [attendence, ticket price, review score, number of review, frequency, capacity, venue score, type of reviews, social media presence]
+
+Writers could have a score based on [type of media, publishing frequency, diversity of coverage, traffic, event scores, festivals score, social media presence]
+
+Every item will have its dedicated page with a breakdown of its score - perhaps a position on a two-dimensional grid or just a percentage, as the focus. Additionally, each item will have a directory of related information - all social media, links to all articles and reviews linked to it, information about the event, information about the venue, information about the festival and information about attendence, capacity etc... 
+
+And, as another layer - users can vote on the accuracy of our scores - this will not affect the scores, but will help make the content more social. Users who are logged in through facebook connect have stronger weighted votes than anonymous voters. Possibly we will have user profiles.

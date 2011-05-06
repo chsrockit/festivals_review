@@ -1,0 +1,20 @@
+App structure
+##############
+
+1. Main page:
+	Live, rolling information about festivals, events, venues and coverage at the Fringe
+	Twitter feeds
+	Trending topics
+	Before the festivals - countdown to the festivals + information
+	2-3ish statistics boxes (tickets, our database size, festivals, events, visits etc...)
+	Most 'accurate' pages (Where people have voted up our scores)
+	Info box about the Edinburgh Festival
+2. Festivals main page
+	Rolling information about the festival - reviews and shows
+	Whats happening 'right now'
+	Upcoming events
+	Top venues and events
+	Statistics boxes
+	Most 'accurate' pages (user favorites)
+	Info box about the Festival
+	

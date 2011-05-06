@@ -1,0 +1,14 @@
+<p>
+  <b>Name:</b>
+  <%=h @venue.name %>
+</p>
+
+
+<p>
+  <b>Festival:</b>
+  <%=h Festival.find(@venue.festival_id).name %>
+</p>
+
+
+<%= link_to 'Edit', edit_venue_path(@venue) %> |
+<%= link_to 'Back', venues_path %>

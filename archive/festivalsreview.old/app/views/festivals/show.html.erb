@@ -1,0 +1,39 @@
+<p>
+  <b>Name:</b>
+  <%=h @festival.name %>
+</p>
+
+<p>
+  <b>Startdate:</b>
+  <%=h @festival.startdate %>
+</p>
+
+<p>
+  <b>Enddate:</b>
+  <%=h @festival.enddate %>
+</p>
+
+
+<%= link_to 'Edit', edit_festival_path(@festival) %> |
+<%= link_to 'Back', festivals_path %>
+
+
+<br/>
+<h3>Venues at <%=@festival.name%>
+<br/><br/>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Venue</th>
+  </tr>
+
+<% @venues.each do |venue| %>
+  <tr>
+    <td><%=h venue.name %></td>
+    <td><%=h Festival.find(venue.festival_id).name %></td>
+    <td><%= link_to 'Show', venue %></td>
+    <td><%= link_to 'Edit', edit_venue_path(venue) %></td>
+    <td><%= link_to 'Destroy', venue, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
