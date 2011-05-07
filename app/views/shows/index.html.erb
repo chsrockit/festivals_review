@@ -1,10 +1,10 @@
-<h2>Festival Name Shows</h2>
+<h2>Fringe  Shows</h2>
 
 <table class="listings">
 
-<% @shows[(1..20)].each do |show| %>
+<% @shows[(1..40)].sort_by {|v| -1*v.score}.each do |show| %>
   <tr>
-    <td class="score <%if show.reviews.length > 0 %>reviewed<%end%>"><%=h show.score %></td>
+    <td class="score <%if show.reviews.length > 0 %>reviewed<%end%>"><%=h show.score.round(2) %></td>
     <td><%=link_to show.name, show %></td>
     <!--<td><%=h show.start_date %></td>
     <td><%=h show.end_date %></td>-->

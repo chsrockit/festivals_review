@@ -2,7 +2,7 @@
 
 <table class="listings">
 
-<% @venues.each do |venue| %>
+<% @venues[(1..40)].sort_by {|v| -1*v.score}.each do |venue| %>
   <tr>
     <td class="score"><%=h venue.score %></td>
     <td><%= link_to venue.name, venue %></td>
