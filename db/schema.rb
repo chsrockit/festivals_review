@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110507023256) do
+ActiveRecord::Schema.define(:version => 20110507024727) do
 
   create_table "events", :force => true do |t|
     t.string   "name"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(:version => 20110507023256) do
     t.float    "score"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.datetime "event_time"
   end
 
   create_table "festivals", :force => true do |t|
