@@ -215,6 +215,7 @@ table.listings td{
 #reviews h4{
     font-size:1.5em;
     padding:12px;
+    
 }
 #reviews li{display:inline-block;position:top;}
 .review{
@@ -225,6 +226,12 @@ table.listings td{
 }
 .review span{
     padding:12px;
+}
+
+.review .source_icon{
+    float:right;
+    margin:2px;
+    max-width:60px;
 }
 
 
@@ -269,4 +276,18 @@ table.listings td{
     height:65px;
     margin:6px;
     display:inline-block;
+}
+
+#best_show{
+    width:260px;
+    margin:6px;
+    height:260px;
+    background:#f8f8f8;
+    float:right;    
+}
+#best_show h4{
+    font-size:1.5em;
+    font-family:sans-serif;
+    color:hsl(181,100%,40%);
+    margin:12px;    
 }

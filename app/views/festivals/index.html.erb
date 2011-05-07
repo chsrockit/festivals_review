@@ -2,7 +2,7 @@
 <div class="festival_listing">
 <% @festivals.each do |festival| %>
 <div class="festival">
-   <span class="score"><%=h festival.score %></span> <h3><%= festival.name %></h3>
+   <h3><span class="score"><%=h festival.score %></span> <%= festival.name %></h3>
     <div class="meta">
         <div class="date_range">
             <span class="date"><%= l festival.start_date, :format => "%d/%m/%Y" %></span> - <span class="date"><%= l festival.end_date, :format => "%d/%m/%Y" %></span>
