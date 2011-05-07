@@ -152,3 +152,31 @@ table.listings td{
     font-size:1.5em;
     padding:2px;
 }
+
+#about {
+  font-family: 'Didact Gothic', sans-serif;
+  margin-left: 40px;
+}
+
+#about h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20pt;
+}
+
+#about p {
+  margin: 0;
+  padding: 0;
+}
+
+#about ul {
+  list-style: disc;
+  padding-left: 80px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#about a {
+  color: #00c9cc;
+}
+
