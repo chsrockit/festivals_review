@@ -10,7 +10,7 @@ html, body {
 	height: 100%;
 }
 
-p{
+p, li{
     font-family:'Didact Gothic', sans-serif;
 
 }
@@ -27,6 +27,8 @@ p{
     width:960px;
     margin: 0 auto;
     text-align:right;
+    border-left: 10px solid hsl(335, 100%, 47%);
+    
      
 }
 .footer p{
@@ -151,4 +153,22 @@ table.listings{
 table.listings td{
     font-size:1.5em;
     padding:2px;
+}
+
+#description{
+    background-color:#efefef;
+    padding:24px;
+    width:480px;
+    float:right;
+    margin-top:24px;
+}
+#meta{
+    margin-top:24px;
+}
+#meta li{
+    margin-left:6px;
+}
+
+#reviews{
+    margin-top:48px;
 }

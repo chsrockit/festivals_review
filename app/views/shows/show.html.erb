@@ -4,13 +4,27 @@
 <h3>
   <%=h @show.name %>
 </h3>
+    <p style="margin-top:-18px;">
+        <%= link_to 'back', shows_path %>
+    </p>
 
-<p>
-  <%=h @show.venue.name %>
-</p>
+  <div id="description"><p><%=h @show.description %></p></div>
+  <ul id="meta">
+    <li>
+        where: <%=h @show.venue.name %>
+    </li>
+    <li>
+        ticket price: £
+    </li>
+    <li>
+        ticket availability: £
+    </li>
+    </div>
 
-<p>
-    <%= link_to '<--- Back', shows_path %>
-</p>
+<div style="clear:both;"></div>
+<div id="reviews">
+    <h3>Reviews</h3>
+
+</div>
 </div>
 
