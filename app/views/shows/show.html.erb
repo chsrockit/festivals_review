@@ -1,33 +1,16 @@
-<p>
-  <b>Festival:</b>
-  <%=h @show.festival_id %>
-</p>
 
-<p>
-  <b>Venue:</b>
-  <%=h @show.venue_id %>
-</p>
-
-<p>
-  <b>Name:</b>
+<div id="listing">
+<span class="score"><%=h @show.score %></span>
+<h3>
   <%=h @show.name %>
+</h3>
+
+<p>
+  <%=h @show.venue.name %>
 </p>
 
 <p>
-  <b>Start date:</b>
-  <%=h @show.start_date %>
+    <%= link_to '<--- Back', shows_path %>
 </p>
+</div>
 
-<p>
-  <b>End date:</b>
-  <%=h @show.end_date %>
-</p>
-
-<p>
-  <b>Score:</b>
-  <%=h @show.score %>
-</p>
-
-
-<%= link_to 'Edit', edit_show_path(@show) %> |
-<%= link_to 'Back', shows_path %>

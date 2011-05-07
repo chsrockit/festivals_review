@@ -43,4 +43,9 @@ table {
 }
 a:link, a:visited, a:active,a:hover {
     text-decoration:none;
+    color:black;
+
+}
+a:hover{
+    color:#bcbcbc;
 }
