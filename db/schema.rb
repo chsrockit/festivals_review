@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110507043721) do
+ActiveRecord::Schema.define(:version => 20110507045523) do
 
   create_table "events", :force => true do |t|
     t.string   "name"
@@ -32,34 +32,36 @@ ActiveRecord::Schema.define(:version => 20110507043721) do
   end
 
   create_table "reviews", :force => true do |t|
-    t.integer "show_id"
-    t.string  "author"
-    t.float   "score"
-    t.text    "body_text"
-    t.string  "source"
-    t.string  "url"
+    t.integer  "show_id"
+    t.string   "author"
+    t.float    "score"
+    t.text     "body_text"
+    t.string   "source"
+    t.string   "url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "shows", :force => true do |t|
-    t.integer  "festival_id"
-    t.integer  "venue_id"
-    t.string   "name"
-    t.datetime "start_date"
-    t.datetime "end_date"
-    t.float    "score"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "genre"
-    t.string   "description"
+    t.integer  "festival_id",                :null => false
+    t.integer  "venue_id",                   :null => false
+    t.string   "name",        :limit => 100, :null => false
+    t.string   "description",                :null => false
+    t.string   "genre",       :limit => 30,  :null => false
+    t.datetime "start_date",                 :null => false
+    t.datetime "end_date",                   :null => false
+    t.float    "score",                      :null => false
+    t.datetime "created_at",                 :null => false
+    t.datetime "updated_at",                 :null => false
   end
 
   create_table "venues", :force => true do |t|
-    t.string   "name"
-    t.integer  "festival_id"
-    t.string   "address"
-    t.float    "score"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string   "name",        :limit => 100, :null => false
+    t.integer  "festival_id",                :null => false
+    t.string   "address",     :limit => 100, :null => false
+    t.float    "score",                      :null => false
+    t.datetime "created_at",                 :null => false
+    t.datetime "updated_at",                 :null => false
   end
 
 end
