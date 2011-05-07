@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= controller.action_name %></title>
+    <%= stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Amaranth' %>
+    <%= stylesheet_link_tag 'reset', '960', 'application' %>
+    <%= javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js'%>
+    <%= javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js'%>
+    <%= javascript_include_tag 'application' %>
+  </head>
+  <body class="festivals">
+    <div class="page container_12">
+      <div id="page_header" class="grid_12">
+        <img src="http://placekitten.com/g/940/200" width="940" height="200">
+      </div>
+      <div class="clear"></div>
+      <div id="page_content" class="grid_12">
+        <%= yield %>
+      </div>
+      <div id="page_footer" class="grid_12">
+        <p class="">Created for <a href="http://culturehackscotland.com">Culture Hack Scotland</a></p>
+      </div>
+    </div>
+  </body>
+</html>
