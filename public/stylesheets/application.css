@@ -1,0 +1,15 @@
+.festivals {
+}
+
+.page_header {
+  font-family: 'Amaranth', serif;
+  background-image:url('http://placekitten.com/g/940/200');
+  height: 200px;
+}
+
+.page_header h1 {
+  padding-top: 30px;
+  font-family: 'Amaranth', serif;
+  font-size: 128px;
+  color: hsl(335, 100%, 47%);
+}
