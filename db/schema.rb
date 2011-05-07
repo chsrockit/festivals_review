@@ -32,15 +32,15 @@ ActiveRecord::Schema.define(:version => 20110507120439) do
   end
 
   create_table "reviews", :force => true do |t|
-    t.integer  "show_id",                                                       :null => false
-    t.string   "author",      :limit => 100,                                    :null => false
-    t.float    "score",                                                         :null => false
-    t.text     "body_text",                                                     :null => false
-    t.string   "source",      :limit => 100,                                    :null => false
-    t.string   "url",                                                           :null => false
-    t.datetime "created_at",                                                    :null => false
-    t.datetime "updated_at",                                                    :null => false
-    t.datetime "review_date",                :default => '2010-08-31 00:00:00', :null => false
+    t.integer  "show_id"
+    t.string   "author"
+    t.float    "score"
+    t.text     "body_text"
+    t.string   "source"
+    t.string   "url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.datetime "review_date"
   end
 
   create_table "shows", :force => true do |t|
