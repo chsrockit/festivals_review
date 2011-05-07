@@ -1,8 +1,8 @@
-<h2>Fringe Festival Shows</h2>
+<h2>Festival Name Shows</h2>
 
 <table class="listings">
 
-<% @shows.each do |show| %>
+<% @shows[(1..20)].each do |show| %>
   <tr>
     <td class="score <%if show.reviews.length > 0 %>reviewed<%end%>"><%=h show.score %></td>
     <td><%=link_to show.name, show %></td>
