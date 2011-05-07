@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110507074628) do
+ActiveRecord::Schema.define(:version => 20110507120439) do
 
   create_table "events", :force => true do |t|
     t.string   "name"
@@ -32,37 +32,38 @@ ActiveRecord::Schema.define(:version => 20110507074628) do
   end
 
   create_table "reviews", :force => true do |t|
-    t.integer  "show_id"
-    t.string   "author"
-    t.float    "score"
-    t.text     "body_text"
-    t.string   "source"
-    t.string   "url"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.datetime "review_date"
+    t.integer  "show_id",                                                       :null => false
+    t.string   "author",      :limit => 100,                                    :null => false
+    t.float    "score",                                                         :null => false
+    t.text     "body_text",                                                     :null => false
+    t.string   "source",      :limit => 100,                                    :null => false
+    t.string   "url",                                                           :null => false
+    t.datetime "created_at",                                                    :null => false
+    t.datetime "updated_at",                                                    :null => false
+    t.datetime "review_date",                :default => '2010-08-31 00:00:00', :null => false
   end
 
   create_table "shows", :force => true do |t|
-    t.integer  "festival_id"
-    t.integer  "venue_id"
-    t.string   "name"
-    t.datetime "start_date"
-    t.datetime "end_date"
-    t.float    "score"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "genre"
-    t.string   "description"
+    t.integer  "festival_id",                :null => false
+    t.integer  "venue_id",                   :null => false
+    t.string   "name",        :limit => 100, :null => false
+    t.string   "description",                :null => false
+    t.string   "genre",       :limit => 30,  :null => false
+    t.datetime "start_date",                 :null => false
+    t.datetime "end_date",                   :null => false
+    t.float    "score",                      :null => false
+    t.datetime "created_at",                 :null => false
+    t.datetime "updated_at",                 :null => false
+    t.integer  "official_id"
   end
 
   create_table "venues", :force => true do |t|
-    t.string   "name"
-    t.integer  "festival_id"
-    t.string   "address"
-    t.float    "score"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string   "name",        :limit => 100, :null => false
+    t.integer  "festival_id",                :null => false
+    t.string   "address",     :limit => 100, :null => false
+    t.float    "score",                      :null => false
+    t.datetime "created_at",                 :null => false
+    t.datetime "updated_at",                 :null => false
   end
 
 end
