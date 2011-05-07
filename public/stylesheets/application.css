@@ -250,6 +250,10 @@ table.listings td{
     margin:24px;
     vertical-align:top;
 }
+.front_box h5{
+    font-weight:bold;
+}
+
 #partners{
     float:right;
     font-size:.8em;
