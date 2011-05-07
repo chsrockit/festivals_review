@@ -1,16 +1,17 @@
-<div class="festivals_listing grid_12">
+<div class="festival_listing">
 <% @festivals.each do |festival| %>
 <div class="festival">
-  <h1><%= festival.name %></h1>
-  <div class="date_range">
-    <span class="date"><%= l festival.start_date, :format => "%d/%m/%Y" %></span> - <span class="date"><%= l festival.end_date, :format => "%d/%m/%Y" %></span>
-  </div>
-  <div class="clear"></div>
-  <div>Score: <span class="score"><%=h festival.score %></span></div>
-  <ul class="nav">
-    <li><%=link_to "Shows", festival_shows_path(festival)%></li>
-    <li><%=link_to "Venues", festival_venues_path(festival)%></li>
-  </ul>
+   <span class="score"><%=h festival.score %></span> <h2><%= festival.name %></h2>
+    <div id="meta">
+        <div class="date_range">
+            <span class="date">When:<%= l festival.start_date, :format => "%d/%m/%Y" %></span> - <span class="date"><%= l festival.end_date, :format => "%d/%m/%Y" %></span>
+        </div>
+        <div>Score: </div>
+    </div>
+    <ul class="nav">
+        <li><%=link_to "Shows", festival_shows_path(festival)%></li>
+        <li><%=link_to "Venues", festival_venues_path(festival)%></li>
+    </ul>
 </div>
 <% end %>
 </div>
