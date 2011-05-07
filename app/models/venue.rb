@@ -13,6 +13,10 @@ class Venue < ActiveRecord::Base
   def rate_show(reviews)
     scores = []
 
+    if reviews.length == 0
+      return 0
+    end
+
     for item in reviews
       scores << item.score.to_f * weight(item.source).to_f
     end
@@ -38,7 +42,6 @@ class Venue < ActiveRecord::Base
       end
     end
 
-    venue_score = (shows_number / 146.0*100*0.5 )+(reviews_number/208.0*100)+(rate_show(reviews))/3
-    return venue_score
+    (shows_number / 146.0*100*0.5 )+(reviews_number/208.0*100)+(rate_show(reviews))/3
   end
 end
