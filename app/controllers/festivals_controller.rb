@@ -2,23 +2,27 @@ class FestivalsController < ApplicationController
   
   # GET /festivals
   # GET /festivals.xml
+  # GET /festivals.json
   def index
     @festivals = Festival.all
 
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @festivals }
+      format.json { render :json => @festivals }
     end
   end
 
   # GET /festivals/1
   # GET /festivals/1.xml
+  # GET /festivals/1.json
   def show
     @festival = Festival.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @festival }
+      format.json { render :json => @festival }
     end
   end
 

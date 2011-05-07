@@ -1,26 +1,16 @@
-<h1>Listing festivals</h1>
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Start date</th>
-    <th>End date</th>
-    <th>Score</th>
-  </tr>
-
+<div class="festivals_listing grid_12">
 <% @festivals.each do |festival| %>
-  <tr>
-    <td><%=h festival.name %></td>
-    <td><%=h festival.start_date %></td>
-    <td><%=h festival.end_date %></td>
-    <td><%=h festival.score %></td>
-    <td><%= link_to 'Show', festival %></td>
-    <td><%= link_to 'Edit', edit_festival_path(festival) %></td>
-    <td><%= link_to 'Destroy', festival, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+<div class="festival">
+  <h1><%= festival.name %></h1>
+  <div class="date_range">
+    <span class="date"><%= l festival.start_date, :format => "%d/%m/%Y" %></span> - <span class="date"><%= l festival.end_date, :format => "%d/%m/%Y" %></span>
+  </div>
+  <div class="clear"></div>
+  <div>Score: <span class="score"><%=h festival.score %></span></div>
+  <ul class="nav">
+    <li><a href="#">Shows</a></li>
+    <li><a href="#">Venues</a></li>
+  </ul>
+</div>
 <% end %>
-</table>
-
-<br />
-
-<%= link_to 'New festival', new_festival_path %>
+</div>
