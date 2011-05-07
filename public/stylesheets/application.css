@@ -217,7 +217,7 @@ table.listings td{
     padding:12px;
     
 }
-#reviews li{display:inline-block;position:top;}
+#reviews li{display:inline-block;position:top;vertical-align:top;}
 .review{
     background-color:#f9f9f9;
     width:260px;
@@ -245,9 +245,10 @@ table.listings td{
 .front_box{
     background-color:#f9f9f9;
     width:260px;
-    height:260px;
+    min-height:260px;
     display:inline-block;
     margin:24px;
+    vertical-align:top;
 }
 #partners{
     float:right;
