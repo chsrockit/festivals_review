@@ -8,8 +8,8 @@
   <div class="clear"></div>
   <div>Score: <span class="score"><%=h festival.score %></span></div>
   <ul class="nav">
-    <li><a href="#">Shows</a></li>
-    <li><a href="#">Venues</a></li>
+    <li><%=link_to "Shows", festival_shows_path(festival)%></li>
+    <li><%=link_to "Venues", festival_venues_path(festival)%></li>
   </ul>
 </div>
 <% end %>
