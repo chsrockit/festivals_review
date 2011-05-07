@@ -1,4 +1,10 @@
 .festivals {
+  font-family: 'Quattrocento Sans', sans-serif;
+  background-color: #111;
+}
+
+#page_content {
+  background-color: #ddd;
 }
 
 .page_header {
