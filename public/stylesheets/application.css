@@ -103,6 +103,9 @@ h3 {
     font-family:'Amaranth',serif;
     color:#bcbcbc;
 }
+.reviewed{
+    color:#e821ff;
+}
 .meta{
     text-transform:lowercase;
     margin:12px 0 18px 12px;
