@@ -1,6 +1,6 @@
 .festivals {
   font-family: 'Quattrocento Sans', sans-serif;
-  background-color: #efefef;
+  background-color: #fefefe;
 }
 
 * {
@@ -10,7 +10,7 @@ html, body {
 	height: 100%;
 }
 
-p{
+p, li{
     font-family:'Didact Gothic', sans-serif;
 
 }
@@ -22,12 +22,15 @@ p{
     border-left: 10px solid hsl(335, 100%, 47%);
 	margin: 0 auto -142px auto; /* the bottom margin is the negative value of the footer's height */
 }
+.footer{
+    border-left: 10px solid hsl(335, 100%, 47%);
+
+}
 .footer, .push {
 	height: 142px; /* .push must be the same height as .footer */
     width:960px;
     margin: 0 auto;
     text-align:right;
-     
 }
 .footer p{
     padding-top:100px;
@@ -180,3 +183,41 @@ table.listings td{
   color: #00c9cc;
 }
 
+#description{
+    background-color:#f9f9f9;
+    padding:24px;
+    width:400px;
+    float:right;
+    margin-top:24px;
+}
+#meta{
+    margin-top:24px;
+}
+#meta li{
+    margin-left:6px;
+}
+
+#reviews{
+    margin-top:48px;
+}
+#reviews h3{
+    color:hsl(181,100%,40%);
+    
+}
+#reviews .score{
+    font-size:1.5em;
+}
+#reviews h4{
+    font-size:1.5em;
+    display:inline-block;
+}
+#reviews li{display:inline-block;position:top;}
+.review{
+    background-color:#f9f9f9;
+    width:240px;
+    padding:12px;
+    margin:6px;
+}
+.review span{
+    padding:12px;
+}

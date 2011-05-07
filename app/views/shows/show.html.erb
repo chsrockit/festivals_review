@@ -1,16 +1,58 @@
+<%= stylesheet_link_tag 'hack' %>
 
 <div id="listing">
 <span class="score"><%=h @show.score %></span>
 <h3>
   <%=h @show.name %>
 </h3>
+    <p style="margin-top:-18px;">
+        <%= link_to 'back', shows_path %>
+    </p>
 
-<p>
-  <%=h @show.venue.name %>
-</p>
+  <div id="description"><p><%=h @show.description %></p></div>
+  <ul id="meta">
+    <li>
+        where: <%=h @show.venue.name %>
+    </li>
+    <li>
+        ticket price: £
+    </li>
+    <li>
+        ticket availability: £
+    </li>
+    </div>
 
-<p>
-    <%= link_to '<--- Back', shows_path %>
-</p>
+<div style="clear:both;"></div>
+<div id="reviews">
+    <h3>Reviews</h3>
+    <div style="clear:both"></div>
+    <ul>
+    <li class="review">
+        <span class="score">0.0</span> <h4>by Author Name</h4>
+        
+        <p>
+ac natoque ac massa elementum rhoncus, elementum scelerisque nec dignissim enim scelerisque vut dapibus parturient aenean, proin ultricies? Risus integer aliquam. Turpis phasellus elementum magna et cursus dis lundium nec a non adipiscing vut nisi lectus, dignissim nunc hac, pulvinar, parturient cursus. Ac amet. Diam etiam phasellus pid porttitor sed.
+</p><p>
+Augue, et, rhoncus! Mauris tincidunt! In sagittis aliquam amet. Augue scelerisque cras pellentesque pulvinar adipiscing egestas duis magnis porta in aliquam magnis mattis ultrices in amet egestas, vel dis. Aliquam massa a auctor, lorem placerat ac magna mid, lectus! Lorem turpis, dis nisi dictumst a? Etiam urna tempor, amet.
+        </p>
+    </li>
+    <li class="review">
+        <span class="score">0.0</span> <h4>by Author Name</h4>
+        <p>
+Augue, et, rhoncus! Mauris tincidunt! In sagittis aliquam amet. Augue scelerisque cras pellentesque pulvinar adipiscing egestas duis magnis porta in aliquam magnis mattis ultrices in amet egestas, vel dis. Aliquam massa a auctor, lorem placerat ac magna mid, lectus! Lorem turpis, dis nisi dictumst a? Etiam urna tempor, amet.
+        </p>
+    </li>
+    <li>
+    <div class="review">
+        <span class="score">0.0</span> <h4>by Author Name</h4>
+        
+        <p>Turpis phasellus elementum magna et cursus dis lundium nec a non adipiscing vut nisi lectus, dignissim nunc hac, pulvinar, parturient cursus. Ac amet. Diam etiam phasellus pid porttitor sed.
+</p><p>
+Augue, et, rhoncus! Mauris tincidunt! In sagittis aliquam amet. Augue scelerisque cras pellentesque pulvinar adipiscing egestas duis magnis porta in aliquam magnis mattis ultrices in amet egestas, vel dis. Aliquam massa a auctor, lorem placerat ac magna mid, lectus! Lorem turpis, dis nisi dictumst a? Etiam urna tempor, amet.
+        </p>
+    </div>
+    </li>
+    </ul>
+</div>
 </div>
 
