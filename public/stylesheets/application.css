@@ -87,6 +87,8 @@ h2 {
     margin-top:-12px;
     font-size:5em;
     display:block;
+    color:hsl(181,100%,40%);
+    
 }
 
 
@@ -213,8 +215,9 @@ table.listings td{
 #reviews h4{
     font-size:1.5em;
     padding:12px;
+    
 }
-#reviews li{display:inline-block;position:top;}
+#reviews li{display:inline-block;position:top;vertical-align:top;}
 .review{
     background-color:#f9f9f9;
     width:260px;
@@ -223,4 +226,69 @@ table.listings td{
 }
 .review span{
     padding:12px;
+}
+
+.review .source_icon{
+    float:right;
+    margin:2px;
+    max-width:60px;
+}
+
+
+#break{
+    margin-top:24px;
+    border-top:5px solid #f6f6f6;
+    background-image:url('/images/background.png');
+    background-repeat:repeat-x;
+    height:300px;
+}
+.front_box{
+    background-color:#f9f9f9;
+    width:260px;
+    min-height:260px;
+    display:inline-block;
+    margin:24px;
+    vertical-align:top;
+}
+#partners{
+    float:right;
+    font-size:.8em;
+    font-family:sans-serif;
+    text-align:center;
+    margin-top:-250px;
+}
+#partners img{
+    display:block;
+    padding:4px;
+}
+
+#break h4{
+    font-size:1.2em;
+    margin:12px;
+    color:hsl(181,100%,40%);
+    text-align:right;    
+}
+#break ul{
+    margin:12px;
+}
+
+.mini_box{
+    width:65px;
+    height:65px;
+    margin:6px;
+    display:inline-block;
+}
+
+#best_show{
+    width:260px;
+    margin:6px;
+    height:260px;
+    background:#f8f8f8;
+    float:right;    
+}
+#best_show h4{
+    font-size:1.5em;
+    font-family:sans-serif;
+    color:hsl(181,100%,40%);
+    margin:12px;    
 }

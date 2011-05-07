@@ -1,15 +1,33 @@
 
 <div id="listing">
-<span class="score"><%=h @venue.score %></span>
 <h3>
+<span class="score"><%=h @venue.score %></span>
   <%=h @venue.name %>
 </h3>
 
 <p>
   <%=h @venue.address %>
 </p>
+<div id="best_show">
+    <h4>best reviewed show</h4>
+    <p>
+        about the best show
+    </p>
+</div>
+<div id="all_shows">
+<table class="listings">
 
+<% @venue.shows.each do |show| %>
+  <tr>
+    <td class="score <%if show.reviews.length > 0 %>reviewed<%end%>"><%=h show.score %></td>
+    <td><%=link_to show.name, show %></td>
+    <!--<td><%=h show.start_date %></td>
+    <td><%=h show.end_date %></td>-->
+  </tr>
+<% end %>
+</table>
+
+</div>
 <p>
-    <%= link_to '<--- Back', venues_path %>
 </p>
 </div>

@@ -28,7 +28,7 @@
     <div style="clear:both"></div>
     <ul>
     <%@show.reviews.each do |review| %>
-    <a href="<%=review.url%>"><li class="review">
+    <a href="<%=review.url%>"><li class="review"><img src="/images/<%=review.source.downcase.gsub(/ /,'')%>.png" class="source_icon"/>
         <h4><span class="score"><%=review.score%></span>by <%=review.author%></h4><br/>
         <p><%= review.body_text %>...</p>
         
