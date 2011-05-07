@@ -1,15 +1,9 @@
-<%=link_to "View Festivals", {:controller=>:festivals, :action=>:index}%>
+<div id="home">
+    <h2>all festival reviews, in one easy place</h2>
+    <h3><%=link_to "View Festivals", {:controller=>:festivals, :action=>:index}%></h3>
 
-<br><br>
+    <h3><%=link_to "View Venues", {:controller=>:venues, :action=>:index}%></h3>
 
-<%=link_to "View Venues", {:controller=>:venues, :action=>:index}%>
+    <h3><%=link_to "View Shows", {:controller=>:shows, :action=>:index}%></h3>
 
-<br><br>
-
-<%=link_to "View Shows", {:controller=>:shows, :action=>:index}%>
-
-<br><br>
-
-<%=link_to "View Events", {:controller=>:events, :action=>:index}%>
-
-<br><br>
+</div>

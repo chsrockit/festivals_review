@@ -1,23 +1,15 @@
-<p>
-  <b>Name:</b>
+
+<div id="listing">
+<span class="score"><%=h @venue.score %></span>
+<h3>
   <%=h @venue.name %>
-</p>
+</h3>
 
 <p>
-  <b>Festival:</b>
-  <%=h @venue.festival_id %>
-</p>
-
-<p>
-  <b>Address:</b>
   <%=h @venue.address %>
 </p>
 
 <p>
-  <b>Score:</b>
-  <%=h @venue.score %>
+    <%= link_to '<--- Back', venues_path %>
 </p>
-
-
-<%= link_to 'Edit', edit_venue_path(@venue) %> |
-<%= link_to 'Back', venues_path %>
+</div>
